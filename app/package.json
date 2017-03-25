@@ -1,0 +1,34 @@
+{
+    "name": "aggie-bus",
+    "version": "0.0.1",
+    "description": "A minimal bus application",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "pack:osx": "electron-packager . $npm_package_productName --out=dist/osx --platform=darwin --arch=x64 --icon=icon/icon.icns",
+        "pack:win32": "electron-packager . $npm_package_productName --out=dist/win --platform=win32 --arch=ia32 --icon=icon/icon.ico",
+        "build": "electron-packager ./ $npm_package_productName --out=dist --all --asar --overwrite --ignore=node_modules/ --icon=icons/icon"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/electron/electron-quick-start.git"
+    },
+    "keywords": [
+        "quick",
+        "start",
+        "tutorial"
+    ],
+    "author": "GitHub",
+    "license": "CC0-1.0",
+    "bugs": {
+        "url": "https://github.com/electron/electron-quick-start/issues"
+    },
+    "homepage": "https://github.com/electron/electron-quick-start#readme",
+    "devDependencies": {
+        "electron-packager": "^7.5.1",
+        "electron-prebuilt": "^1.2.0"
+    },
+    "dependencies": {
+        "electron": "^1.6.2"
+    }
+}

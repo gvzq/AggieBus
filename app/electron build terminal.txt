@@ -1,0 +1,10 @@
+electron-packager ./ Cal --out=dist --platform=all --arch=all --asar --overwrite --ignore=node_modules/electron-prebuilt --ignore=node_modules/electron-packager
+
+
+mac build icon
+
+electron-packager ./ Cal --out=dist --platform=darwin --arch=all --asar --overwrite --ignore=node_modules/electron-prebuilt --ignore=node_modules/electron-packager --icon=icon.icns
+
+GOOGLEAPIS_API_KEY=AIzaSyA_f89ejd_jObXibzegfRM8KTBLi7ek-5g
+GOOGLE_API_KEY=AIzaSyAl0GHkTxpdw7tuY-MOi4oZhfSYmQpvR3s
+NODE_ENV=development
